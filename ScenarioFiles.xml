@@ -11,7 +11,7 @@ This scenario is auto-timed with pilot phraseology prompts. The student (and ins
 
 There is scope for the workload in this scenario to be altered according to the student's performance. This is best done by introducing or removing aircraft from the circuit area as required. There are four aircraft available for circuits (NRM, TTR, INB, and DFR). It is recommended that at least one aircraft remains in the circuit area for the entire scenario, to facilitate 'teaching moments' involving conflicts and provision of traffic information.
 
-IMPORTANT: ensure arrivals are maintaining A003 at S70L on the base leg; otherwise, the arrival will be unable to join the approach and will pass through the CL. 
+IMPORTANT: ensure arrivals are maintaining A003 at speed 70L on the base leg; otherwise, the arrival will be unable to join the approach and will pass through the CL. 
 
 There is an **optional** conflict between **JRC** and **JKE** near TWRN. The instructor will be prompted to spawn JRC at the start of the scenario; this may be accepted or denied, depending on anticipated student capability. The student should pass TRAFFIC INFORMATION or a SAFETY ALERT to both aircraft, and then the instructor may simulate pilot response to the conflict by adjusting speeds, heading, or altitude.
 
@@ -23,7 +23,7 @@ Other conflicts will emerge throughout the scenario, however they will not requi
 ## Procedure
 - Circuit aircraft must request start approval.
 - All other aircraft call when taxiing.
-- Arrivals are unable to join a circuit in the sweatbox, so will track via bearing/distance points to simulate a circuit. The instructor should **ensure that arrivals are maintaining A003 at S70L on the base leg.** Otherwise, the arrival will be unable to join the approach and will pass through the CL. Ensure the student clears arrivals for a visual approach when on downwind and clear of traffic conflicts.
+- Arrivals are unable to join a circuit in the sweatbox, so will track via bearing/distance points to simulate a circuit. The instructor should **ensure that arrivals are maintaining A003 at speed 70L on the base leg.** Otherwise, the arrival will be unable to join the approach and will pass through the CL. Ensure the student clears arrivals for a visual approach when on downwind and clear of traffic conflicts.
 - Helicopters **must depart from the runway** and advise this when requesting taxi.
 - Departing aircraft must **advise intentions in ready call**, "UPWIND DEPARTURE", "DEPARTURE VIA CHOPPERS WEST", etc.
 - When a multi-engine or jet aircraft occupies the CENTRE runway, the LEFT and RIGHT runways are considered dependent for departures. Therefore, aircraft cannot be cleared for takeoff/touch-and-go on runway L/R when C is in use.
@@ -299,34 +299,6 @@ Format: **CALLSIGN [INTENTIONS] (TIME)**
     </Aircraft>
   </Targets>
 </ScenarioFile>
-  <ScenarioFile>
-    <Name>Circuits</Name>
-    <Type>Testing</Type>
-    <UseGRIB xsi:nil="true" />
-    <Targets>
-      <Aircraft Callsign="AAA" Type="C172" Delay="0" StartAuto="false">
-        <Squawk Code="1200" ModeC="true" />
-        <Cleared Level="1000" Approach="false" />
-        <Position Latitude="-33.97130777280001" Longitude="151.1921589388749" Speed="0" Altitude="0" />
-        <FlightPlan Departure="YSSY" Destination="YSSY" Active="false" Rules="V" CruiseSpeed="110" ETD="0000" ATD="" RFL="1000" EETHours="0" EETMins="0" FuelHours="0" FuelMins="0" Remarks="/v/">YSSY/34R</FlightPlan>
-        <Route>CIRCUITS-RIGHT</Route>
-      </Aircraft>
-      <Aircraft Callsign="BBB" Type="A320" Delay="0" StartAuto="false">
-        <Squawk Code="1200" ModeC="true" />
-        <Cleared Level="3000" Approach="false" />
-        <Position Latitude="-33.97130777280001" Longitude="151.1921589388749" Speed="0" Altitude="0" />
-        <FlightPlan Departure="YSSY" Destination="YSSY" Active="false" Rules="V" CruiseSpeed="210" ETD="0000" ATD="" RFL="1000" EETHours="0" EETMins="0" FuelHours="0" FuelMins="0" Remarks="/v/">YSSY/34R</FlightPlan>
-        <Route>CIRCUITS-RIGHT</Route>
-      </Aircraft>
-      <Aircraft Callsign="CCC" Type="C182" Delay="0" StartAuto="false">
-        <Cleared Level="1000" Approach="false" />
-        <Squawk Code="1200" ModeC="true" />
-        <Position Latitude="-33.93783858520932" Longitude="151.18863060670807" Speed="0" Altitude="0" />
-        <FlightPlan Departure="YSSY" Destination="YSSY" Active="false" Rules="V" CruiseSpeed="120" ETD="0000" ATD="0000" RFL="1000" EETHours="0" EETMins="0" FuelHours="0" FuelMins="0" Remarks="/v/">YSSY/25</FlightPlan>
-        <Route>CIRCUITS-RIGHT</Route>
-      </Aircraft>
-    </Targets>
-  </ScenarioFile>
 <ScenarioFile>
   <Name>Circuits Melbourne (no arrivals)</Name>
   <Type>Tower</Type>
